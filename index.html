@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+
+          <div class="card border-0" id="user">
+              <div class="card-header" id="user-header">
+                <img class="user-photo" src="images/image-jeremy.png" alt="user-photo">
+                <p> Report for </p>
+                <h1 class="user-name"> Jeremy Robson</h>
+              </div>
+              <div class="card-body" id="user-body">
+                  <ul id="durations">
+                    <li id="daily-link"> Daily </li>
+                    <li id="weekly-link"> Weekly </li>
+                    <li id="monthly-link"> Monthly </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+
+              <div class="card work border-0">
+                  <div class="card-header time-card-header">
+                    <img class="icon" src="images/icon-work.svg" alt="work-icon">
+                  </div>
+                  <div class="card-body">
+                    <div class="title-container">
+                      <h5 class="card-title">Work</h5>
+                      <img class="ellipsis" src="images/icon-ellipsis.svg">
+                    </div>
+                    <div class="activity-container">
+                      <h1 class="activity-amount" id="work-amount">32 hrs</h1>
+                      <p class ="previous-activity" id="work-previous">Last Week - 36 hrs</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="card play border-0">
+                <div class="card-header time-card-header">
+                    <img class="icon" src="images/icon-play.svg" alt="play-icon">
+                </div>
+                  <div class="card-body">
+                    <div class="title-container">
+                    <h5 class="card-title">Play</h5>
+                    <img class="ellipsis" src="images/icon-ellipsis.svg">
+                    </div>
+                    <div class="activity-container">
+                      <h1 class="activity-amount" id="play-amount">10 hrs</h1>
+                      <p class ="previous-activity" id="play-previous">Last Week - 8 hrs</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="card study border-0">
+                <div class="card-header time-card-header">
+                  <img class="icon" src="images/icon-study.svg" alt="study-icon">
+                </div>
+                  <div class="card-body">
+                    <div class="title-container">
+                      <h5 class="card-title">Study</h5>
+                      <img class="ellipsis" src="images/icon-ellipsis.svg">
+                    </div>
+                    <div class="activity-container">
+                        <h1 class="activity-amount" id="study-amount">4 hrs</h1>
+                        <p class ="previous-activity" id="study-previous">Last Week - 7 hrs</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            </div>
+
+
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+
+              <div class="card exercise border-0">
+                <div class="card-header time-card-header">
+                  <img class="icon" src="images/icon-exercise.svg" alt="exercise-icon">
+                </div>
+                  <div class="card-body">
+                    <div class="title-container">
+                      <h5 class="card-title">Exercise</h5>
+                      <img class="ellipsis" src="images/icon-ellipsis.svg">
+                    </div>
+                    <div class="activity-container">
+                        <h1 class="activity-amount" id="exercise-amount">4 hrs</h1>
+                        <p class ="previous-activity" id="exercise-previous"> Last Week - 5hrs</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+              <div class="card social border-0">
+                <div class="card-header time-card-header">
+                  <img class="icon" src="images/icon-social.svg" alt="social-icon">
+                </div>
+                  <div class="card-body">
+                    <div class="title-container">
+                    <h5 class="card-title">Social</h5>
+                    <img class="ellipsis" src="images/icon-ellipsis.svg">
+                  </div>
+                  <div class="activity-container">
+                      <h1 class="activity-amount" id="social-amount">5 hrs</h1>
+                      <p class ="previous-activity" id="social-previous"> Last Week - 10hrs</p>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+
+            <div class="col-lg-4">
+
+              <div class="card self-care border-0">
+                <div class="card-header time-card-header">
+                  <img class="icon" src="images/icon-self-care.svg" alt="self-care-icon">
+                </div>
+                  <div class="card-body">
+                    <div class="title-container">
+                      <h5 class="card-title">Self-Care</h5>
+                      <img class="ellipsis" src="images/icon-ellipsis.svg">
+                  </div>
+                  <div class="activity-container">
+                    <h1 class="activity-amount" id="self-care-amount">2 hrs</h1>
+                    <p class ="previous-activity" id="self-care-previous"> Last Week - 2hrs</p>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="Javascript/scripts.js"></script>
+</body>
+</html>

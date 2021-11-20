@@ -1,0 +1,300 @@
+body {
+  background-color: 	#0f1424;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  padding: 20% 5%;
+}
+
+row {
+  margin: 0;
+  max-width: 100%;
+}
+
+.container-fluid {
+  max-width: 90%;
+}
+
+#user {
+  height: 30.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 0 0 0;
+}
+
+#user-header{
+  position: relative;
+  z-index: 2;
+  background-color: hsl(246, 80%, 60%);
+  overflow: visible;
+  max-height: 40rem;
+  border-radius: 20px !important;
+  margin-bottom: -2rem;
+
+}
+
+.user-photo {
+  height: 5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 1rem 1rem;
+}
+
+#user-header p {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  opacity: 80%;
+  font-weight: 300;
+  letter-spacing: 1.5;
+}
+
+#user-header h1 {
+  margin: 0 1rem 4rem 1rem;
+  opacity: 80%;
+  font-weight: 300;
+}
+
+#user-body {
+  position: relative;
+  z-index: 0;
+}
+
+
+#durations {
+  list-style-type: none;
+  line-height: 2.5;
+  margin: 2rem 1rem 0 1rem;
+  padding: 0;
+  opacity: 100%;
+  color: hsl(246, 80%, 60%)
+}
+
+#durations li:hover {
+  color: white;
+}
+
+.card {
+  border-radius: 20px;
+  max-width: 90%;
+  height: 14rem;
+  margin: 20px auto;
+}
+
+.time-card-header {
+  border-radius: 20px 20px 0 0 !important;
+  max-width: 100%;
+  max-height: 3rem;
+  position: relative;
+  text-align: right;
+  overflow: hidden;
+}
+
+.icon {
+  margin-top: -1rem;
+  position: relative;
+  z-index: 0;
+}
+
+.icon:hover{
+  color: white;
+}
+
+
+.work {
+  background-color: #ff8c66;
+}
+
+.play {
+  background-color:#56c2e6;
+}
+
+.study {
+  background-color: #ff5c7c;
+}
+
+.exercise {
+  background-color: #4acf81;
+}
+
+.social {
+  background-color: #7536d3;
+}
+
+.self-care {
+  background-color:#f1c65b;
+}
+
+.card-body {
+  background-color: #1c1f4a;
+  padding: 1rem;
+  margin: -0.3rem 0 -0.3rem 0;
+  border-radius: 20px 20px 20px 20px !important;
+  position: relative;
+  z-index: 1;
+  display: block;
+  text-align: left;
+}
+
+.card-body:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+
+#user-body:hover {
+  background-color: #1c1f4a;
+}
+
+.title-container {
+  display: block;
+  height: 3rem;
+  width: 100%;
+}
+
+.card-title {
+  padding-top: 0.8rem;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block;
+  float: left;
+}
+
+.ellipsis {
+  padding-top: 1rem;
+  display: inline-block;
+  float: right;
+}
+
+.activity-container {
+  display: block;
+  height: 5rem;
+  width: 100%;
+}
+
+.activity-amount {
+  font-weight: 300;
+  font-size: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.previous-activity {
+  display: block;
+  padding-top: 1rem;
+  font-weight: 300;
+  opacity: 80%;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    max-width: 100%;
+  }
+
+  .container-fluid {
+    max-width: 100%;
+  }
+
+  #user-header h1 {
+    font-size: 2rem;
+  }
+
+  .activity-amount {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #user-header h1 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+   .card {
+     height: 10rem;
+     margin-top: 1.5rem;
+   }
+
+   #user {
+     width: 90%;
+     height: 10rem;
+     margin: 1.5rem auto 1.5rem auto;
+   }
+
+   #user-header{
+     overflow: hidden;
+     height: 9rem;
+     position: relative;
+     margin-bottom: -4rem;
+     display: inline-block;
+   }
+
+   .user-photo {
+     display: inline;
+     float: left;
+     margin-left: 0.1rem;
+   }
+
+   #user-header p {
+     display: block;
+     margin-top: 1.5rem;
+   }
+
+   #user-header h1 {
+     display: block;
+   }
+
+   #user-body {
+     text-align: center;
+     padding: 2.6rem 0 0 0;
+   }
+
+   #durations {
+     display: inline-block;
+     line-height: 1;
+     margin: -3rem auto;
+   }
+
+   #durations li {
+     display: inline;
+     padding: 0 1.5rem 0 1.5rem;
+     opacity: 80%;
+   }
+
+   .card-title {
+     padding-top: 0.5rem;
+   }
+
+   .card-body {
+     margin: -0.3rem 0 -0.3rem 0;
+     height: 8rem;
+   }
+
+   .title-container {
+     padding-top: 0rem;
+   }
+
+   .activity-container {
+     align-items: center;
+   }
+
+   .activity-amount {
+     display: inline;
+     margin-left: 0;
+     float: left;
+     vertical-align: middle;
+   }
+
+   .previous-activity {
+     display: inline;
+     float: right;
+     vertical-align: middle;
+   }
+}
